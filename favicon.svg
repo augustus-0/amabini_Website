@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <!-- Solid black circle background to match the branding -->
-  <circle cx="12" cy="12" r="12" fill="#000000" />
+  <!-- Solid white circle background to match the inverted branding -->
+  <circle cx="12" cy="12" r="12" fill="#ffffff" />
   
   <defs>
     <mask id="fav-mask" maskUnits="userSpaceOnUse">
@@ -14,8 +14,8 @@
     </mask>
   </defs>
   
-  <!-- Star scaled down to 75% to sit beautifully centered inside the black circle background -->
-  <g transform="translate(3, 3) scale(0.75)">
-    <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff" stroke-width="1" mask="url(#fav-mask)" stroke-linejoin="round" />
+  <!-- Star scaled up to 92% (translate 1,1) to sit beautifully and match the larger website padding -->
+  <g transform="translate(1, 1) scale(0.92)">
+    <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#1a1b26" stroke="#1a1b26" stroke-width="1" mask="url(#fav-mask)" stroke-linejoin="round" />
   </g>
 </svg>

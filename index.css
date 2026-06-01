@@ -209,8 +209,8 @@ button, input, textarea, select {
   justify-content: center;
   position: relative;
   border-radius: 50%;
-  background-color: #000000; /* Solid Black Background */
-  padding: 4px;
+  background-color: #ffffff; /* Solid White Background */
+  padding: 1px; /* Star is now much bigger! */
   transition: var(--transition-smooth);
 }
 
@@ -223,8 +223,8 @@ button, input, textarea, select {
 
 /* Tokyo Night Default States */
 .logo-svg .star-filled {
-  stroke: #ffffff;
-  fill: #ffffff; /* Solid White like GitHub */
+  stroke: #1a1b26;
+  fill: #1a1b26; /* Matches website background */
   stroke-width: 1px;
   transition: var(--transition-smooth);
 }
