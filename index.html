@@ -6,7 +6,30 @@
   <meta name="description" content="Amabini Solutions - Digital transformation, custom software, workflow automation, and analytics built specifically to help SMEs grow, save hours, and scale globally. Book your free consultation today.">
   <title>Amabini Solutions // Digital Scaling & Automation for SMEs</title>
   
-  <link rel="stylesheet" href="index.css">
+  <!-- Inline SVG Favicon representing PUP star & Apolinario Mabini -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cdefs%3E%3Cmask id='fav-mask' maskUnits='userSpaceOnUse'%3E%3Cpath d='M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z' fill='%23ffffff' stroke='%23ffffff' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='8.5' r='1.2' fill='%23000000'/%3E%3Cpath d='M12 10V12.5' stroke='%23000000' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M9.5 11H14.5' stroke='%23000000' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M12 12.5L10.5 14.5M12 12.5L13.5 14.5' stroke='%23000000' stroke-width='2' stroke-linecap='round'/%3E%3C/mask%3E%3C/defs%3E%3Cpath d='M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z' fill='%23ffffff' stroke='%23ffffff' stroke-width='1' stroke-linejoin='round' mask='url(%23fav-mask)'/%3E%3C/svg%3E">
+  
+  <link rel="stylesheet" href="index.css?v=2">
+  
+  <style>
+    /* Bypass browser CSS cache to guarantee negative-space brand logo styles are applied immediately */
+    .logo-svg .star-filled {
+      stroke: #ffffff !important;
+      fill: #ffffff !important;
+      stroke-width: 1px !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    }
+    .nav-logo:hover .logo-icon, .logo-icon:hover {
+      background-color: #A31820 !important;
+      box-shadow: 0 0 15px rgba(163, 24, 32, 0.8) !important;
+      transform: scale(1.1) rotate(5deg) !important;
+    }
+    .nav-logo:hover .logo-svg .star-filled, .logo-icon:hover .logo-svg .star-filled {
+      stroke: #ffd700 !important;
+      fill: #ffd700 !important;
+      filter: drop-shadow(0 0 4px #ffd700) !important;
+    }
+  </style>
   
   <!-- SEO & Social OpenGraph Meta Tags -->
   <meta property="og:title" content="Amabini Solutions // Digital Scaling & Automation for SMEs">
@@ -22,7 +45,23 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="#hero" class="nav-logo" id="nav-logo">
-        <div class="logo-icon">A</div>
+        <div class="logo-icon">
+          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <mask id="nav-logo-mask" maskUnits="userSpaceOnUse">
+                <!-- Outer white star (visible part) -->
+                <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+                <!-- Inner black stick figure cutout (transparent hole, moved higher and scaled smaller) -->
+                <circle cx="12" cy="8.5" r="1.2" fill="#000000" />
+                <path d="M12 10V12.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                <path d="M9.5 11H14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                <path d="M12 12.5L10.5 14.5M12 12.5L13.5 14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+              </mask>
+            </defs>
+            <!-- Visible star with masked cutout -->
+            <path class="star-filled" d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff" stroke-width="1" mask="url(#nav-logo-mask)" stroke-linejoin="round" />
+          </svg>
+        </div>
         <div class="logo-text">amabini<span>.solutions</span></div>
       </a>
       
@@ -425,7 +464,23 @@
     <div class="container">
       <div class="footer-layout">
         <a href="#hero" class="nav-logo">
-          <div class="logo-icon">A</div>
+          <div class="logo-icon">
+          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <mask id="footer-logo-mask" maskUnits="userSpaceOnUse">
+                <!-- Outer white star (visible part) -->
+                <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+                <!-- Inner black stick figure cutout (transparent hole, moved higher and scaled smaller) -->
+                <circle cx="12" cy="8.5" r="1.2" fill="#000000" />
+                <path d="M12 10V12.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                <path d="M9.5 11H14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                <path d="M12 12.5L10.5 14.5M12 12.5L13.5 14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+              </mask>
+            </defs>
+            <!-- Visible star with masked cutout -->
+            <path class="star-filled" d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff" stroke-width="1" mask="url(#footer-logo-mask)" stroke-linejoin="round" />
+          </svg>
+        </div>
           <div class="logo-text">amabini<span>.solutions</span></div>
         </a>
         
