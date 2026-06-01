@@ -4,7 +4,8 @@
   "description": "Amabini Solutions - Human-Centric Digital Transformation",
   "main": "index.html",
   "scripts": {
-    "dev": "npx -y http-server . -p 3000 -o"
+    "dev": "npx -y http-server . -p 3000 -o",
+    "build": "echo 'Static site: no build step required'"
   },
   "keywords": [
     "digital-transformation",
