@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amabini Solutions - Digital transformation, custom software, workflow automation, and analytics built specifically to help SMEs grow, save hours, and scale globally. Book your free consultation today.">
+  <title>Amabini Solutions // Digital Scaling & Automation for SMEs</title>
+  
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- SEO & Social OpenGraph Meta Tags -->
+  <meta property="og:title" content="Amabini Solutions // Digital Scaling & Automation for SMEs">
+  <meta property="og:description" content="We build high-converting websites, automate manual admin tasks, and clean sales data. Made in the Philippines, scaling businesses worldwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amabini.com">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <div class="logo-icon">A</div>
+        <div class="logo-text">amabini<span>.solutions</span></div>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#foundations" class="nav-link"><span>01 //</span> Core Values</a></li>
+        <li><a href="#services" class="nav-link"><span>02 //</span> Services</a></li>
+        <li><a href="#concept" class="nav-link"><span>03 //</span> Our Method</a></li>
+        <li><a href="#contact" class="nav-link"><span>04 //</span> Free Call</a></li>
+      </ul>
+      
+      <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView();">
+        Book Free Consultation
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <header class="hero" id="hero">
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <div class="hero-badge-pulse"></div>
+            <span>FREE CUSTOM CONSULTATION // ACTIVE</span>
+          </div>
+          <h1>Digital growth engineered to scale your business.</h1>
+          <p class="hero-subtitle">
+            At Amabini Solutions, we build high-performing websites, automate manual administrative tasks, and turn scattered spreadsheets into clear dashboards. We make technology simple and reliable, saving your team hours so you can focus on growing your revenue.
+          </p>
+          <div class="hero-buttons">
+            <button class="hero-cta" onclick="document.getElementById('contact').scrollIntoView();">
+              Claim Free Consultation
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="hero-secondary" onclick="toggleChatbot(true);">
+              Consult Scoping AI
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line><path d="M12 13a3 3 0 0 0-3 3h6a3 3 0 0 0-3-3z"></path></svg>
+            </button>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-teal); margin-top: 14px; opacity: 0.85;">
+            * 100% Free Consultation • No Obligation • 20-Min Digital Health Map
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <canvas id="hero-canvas"></canvas>
+          <div class="tech-spec-box">
+            <div class="tech-spec-line">FOCUS: <span>SME Scaling // Global Growth</span></div>
+            <div class="tech-spec-line">EFFICIENCY: <span>Up to 70% Time Saved</span></div>
+            <div class="tech-spec-line">SSL INTEGRITY: <span>Bank-Grade Encryption</span></div>
+            <div class="tech-spec-line">CONSULTATION: <span>100% Free // Active</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       FOUNDATIONS (THE DECALOGUE) SECTION
+       ========================================== -->
+  <section class="foundations" id="foundations">
+    <div class="container">
+      <span class="mono-tag">01 // BUSINESS PRINCIPLES</span>
+      <h2 class="section-title">The Foundations</h2>
+      <p class="section-desc">
+        We subscribe to ten core values. They guide how we manage projects, build software, and help business owners simplify operations and increase sales.
+      </p>
+      
+      <div class="foundations-grid">
+        <div class="foundation-card">
+          <div class="foundation-num">01.</div>
+          <div class="foundation-info">
+            <h3>People First</h3>
+            <p>Technology should support your team, not frustrate them. We build clean systems that are intuitive and easy to use from day one.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">02.</div>
+          <div class="foundation-info">
+            <h3>Execution Over Jargon</h3>
+            <p>We value real results over complex tech words. We focus on delivering what matters to you: saved hours, more sales, and happier customers.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">03.</div>
+          <div class="foundation-info">
+            <h3>Built to Grow</h3>
+            <p>Your business will scale, and your software must scale with you. We build flexible architectures that adapt easily to new markets.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">04.</div>
+          <div class="foundation-info">
+            <h3>Understanding Customers</h3>
+            <p>Your sales and traffic figures tell a story. We organize your data into simple visual charts so you know exactly what your clients need.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">05.</div>
+          <div class="foundation-info">
+            <h3>Continuous Support</h3>
+            <p>We don't deploy and disappear. We act as your long-term digital growth partners, keeping your assets secure and highly optimized.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">06.</div>
+          <div class="foundation-info">
+            <h3>Flawless Customer Access</h3>
+            <p>A slow website is a lost customer. We ensure your platforms load instantly on any mobile device, anywhere in the world.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">07.</div>
+          <div class="foundation-info">
+            <h3>Saving Your Team's Time</h3>
+            <p>We automate tedious copy-paste admin work, freeing up your staff to focus on high-value client relations and building sales.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">08.</div>
+          <div class="foundation-info">
+            <h3>Security & Trust</h3>
+            <p>Protecting client trust is paramount. We build secure checkout lines, encrypted portals, and follow strict global data privacy rules.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">09.</div>
+          <div class="foundation-info">
+            <h3>Smart AI Integration</h3>
+            <p>We deploy practical, smart AI assistants to answer basic client questions 24/7, categorize emails, and speed up client booking.</p>
+          </div>
+        </div>
+        
+        <div class="foundation-card">
+          <div class="foundation-num">10.</div>
+          <div class="foundation-info">
+            <h3>Cost-Efficient Architectures</h3>
+            <p>We write clean, optimized code that runs efficiently. This keeps your ongoing server and cloud hosting bills as low as possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICES SECTION
+       ========================================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <span class="mono-tag">02 // WHAT WE DELIVER</span>
+      <h2 class="section-title">Core Services</h2>
+      <p class="section-desc">
+        We specialize in the digital capabilities that directly impact an SME's bottom line: sales growth, time savings, and automation.
+      </p>
+      
+      <div class="services-grid">
+        
+        <!-- Web & E-Commerce -->
+        <div class="service-card s-web">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3>Web & E-Commerce <span>WEB_GROWTH</span></h3>
+          <p>We design beautiful, lightning-fast websites and online shops engineered to turn anonymous visitors into paying customers.</p>
+          <div class="service-tags">
+            <span class="service-tag">Online Stores</span>
+            <span class="service-tag">Responsive Design</span>
+            <span class="service-tag">Customer Portals</span>
+          </div>
+        </div>
+        
+        <!-- Business Analytics -->
+        <div class="service-card s-data">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3>Business Analytics <span>BI_INTELLIGENCE</span></h3>
+          <p>We consolidate scattered business metrics, sales sheets, and inventories into neat, automated dashboards for smart decision-making.</p>
+          <div class="service-tags">
+            <span class="service-tag">Sales Dashboards</span>
+            <span class="service-tag">Inventory Reports</span>
+            <span class="service-tag">Data Consolidation</span>
+          </div>
+        </div>
+        
+        <!-- Process Automation -->
+        <div class="service-card s-automation">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3>Process Automation <span>SYS_EFFICIENCY</span></h3>
+          <p>We link your invoice software, email lists, and CRM together, automating manual, repetitive file updates to save thousands of hours.</p>
+          <div class="service-tags">
+            <span class="service-tag">Invoice Automations</span>
+            <span class="service-tag">CRM Sync</span>
+            <span class="service-tag">Tool Integrations</span>
+          </div>
+        </div>
+        
+        <!-- Smart AI Assistants -->
+        <div class="service-card s-ai">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <h3>Applied AI Assistants <span>SMART_SYSTEMS</span></h3>
+          <p>We set up smart customer support chatbots, automatic email categorizers, and simple AI agents to handle standard inquiries 24/7.</p>
+          <div class="service-tags">
+            <span class="service-tag">24/7 AI Chat</span>
+            <span class="service-tag">Auto-Replying</span>
+            <span class="service-tag">Email Filters</span>
+          </div>
+        </div>
+        
+        <!-- Digital Growth & SEO -->
+        <div class="service-card s-marketing">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </div>
+          <h3>Digital Growth & SEO <span>MARKET_SCALE</span></h3>
+          <p>We build long-term, organic marketing models using technical SEO to place your services in front of international buyers searching Google.</p>
+          <div class="service-tags">
+            <span class="service-tag">Google Ranking</span>
+            <span class="service-tag">Lead Funnels</span>
+            <span class="service-tag">Intl Growth</span>
+          </div>
+        </div>
+        
+        <!-- Custom Software -->
+        <div class="service-card s-software">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3>Custom Software <span>CUSTOM_SYSTEMS</span></h3>
+          <p>We engineer custom, secure internal portals, custom databases, and client portals built to solve your unique business bottlenecks.</p>
+          <div class="service-tags">
+            <span class="service-tag">Client Portals</span>
+            <span class="service-tag">Custom Tools</span>
+            <span class="service-tag">Secure Cloud</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE CANVAS SECTION
+       ========================================== -->
+  <section class="human-experience" id="concept">
+    <div class="container">
+      <div class="hex-layout">
+        <div class="hex-content">
+          <span class="mono-tag">03 // SERVICE FOCUS MAP</span>
+          <h2>A Human-Centric Experience</h2>
+          <p>
+            Your staff and your customers are the core of your business. In our design paradigm, all digital solutions (websites, custom tools, AI scripts, automations) must directly support the **Human Experience**.
+          </p>
+          <div class="hex-quote">
+            "Software is only optimal when it remains a simple, empowering assistant to your team and your customers."
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Interact with the visual console to the right. Move your cursor inside the map to simulate system parameters. Notice how all business capabilities automatically coordinate and balance themselves around the central human coordinate.
+          </p>
+        </div>
+        
+        <div class="hex-interactive-container">
+          <div class="hex-panel-header">
+            <div class="hex-header-title">BUSINESS_FLOW.EXE // SERVICES_COORDINATION</div>
+            <div class="hex-header-dots">
+              <div class="hex-dot"></div>
+              <div class="hex-dot"></div>
+              <div class="hex-dot teal"></div>
+            </div>
+          </div>
+          <div class="hex-canvas-box">
+            <canvas id="hex-canvas"></canvas>
+            <div class="hex-canvas-overlay" id="hex-overlay">SYSTEM: STABLE // SERVICES: 6 // STATUS: OPTIMAL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & INTAKE CONSOLE
+       ========================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="mono-tag">04 // FREE CONSULTATION</span>
+          <h2>Let's build your free digital growth map.</h2>
+          <p class="section-desc" style="margin-bottom: 20px;">
+            Book a free, 20-minute digital health audit with us. We will analyze your manual administrative work, review your search rankings, and design a custom scaling plan for your business—100% free, no obligation.
+          </p>
+          
+          <ul class="contact-details">
+            <li>
+              <div class="contact-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-label">Consultation Channel</div>
+                <div class="contact-val"><a href="mailto:operations@amabini.com">operations@amabini.com</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-label">Active Presence</div>
+                <div class="contact-val">Manila, PH &mdash; Serving International Clients</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Interactive Console Form -->
+        <div class="intake-console">
+          <div class="console-header">
+            <div class="console-title">
+              <div class="console-indicator"></div>
+              <span>AMABINI_FREE_CONSULTATION_PORTAL</span>
+            </div>
+            <div class="console-controls">
+              <div class="console-dot"></div>
+              <div class="console-dot"></div>
+            </div>
+          </div>
+          
+          <div class="console-body">
+            <form id="intake-form" onsubmit="handleFormSubmit(event)">
+              
+              <div class="console-form-group">
+                <label for="client-name">01 // YOUR NAME / IDENTITY</label>
+                <div class="console-input-wrapper">
+                  <input type="text" id="client-name" class="console-input" placeholder="e.g. Elena Rostova" required>
+                </div>
+              </div>
+              
+              <div class="console-grid">
+                <div class="console-form-group">
+                  <label for="client-email">02 // BUSINESS EMAIL</label>
+                  <input type="email" id="client-email" class="console-input" placeholder="name@company.com" required>
+                </div>
+                
+                <div class="console-form-group">
+                  <label for="client-domain">03 // CURRENT WEBSITE (IF ANY)</label>
+                  <input type="text" id="client-domain" class="console-input" placeholder="www.company.com">
+                </div>
+              </div>
+              
+              <div class="console-form-group">
+                <label for="service-scope">04 // WHAT IS YOUR MAIN GOAL?</label>
+                <select id="service-scope" class="console-input" style="color: var(--text-heading);" required>
+                  <option value="" disabled selected style="background-color: var(--surface-card);">Select a primary parameter...</option>
+                  <option value="web" style="background-color: var(--surface-card);">Build a New Website / E-Commerce Store (WEB_GROWTH)</option>
+                  <option value="data" style="background-color: var(--surface-card);">Clean & Visualize Sales Data (BI_INTELLIGENCE)</option>
+                  <option value="automation" style="background-color: var(--surface-card);">Automate Repetitive Admin Work (SYS_EFFICIENCY)</option>
+                  <option value="ai" style="background-color: var(--surface-card);">Deploy Custom AI Assistants (SMART_SYSTEMS)</option>
+                  <option value="marketing" style="background-color: var(--surface-card);">Rank Higher on Google / SEO (MARKET_SCALE)</option>
+                  <option value="full" style="background-color: var(--surface-card);">Book a Full 20-Min Digital Health Map (FREE_CONSULTATION)</option>
+                </select>
+              </div>
+              
+              <div class="console-form-group">
+                <label for="project-desc">05 // BUSINESS CHALLENGES & DETAILS</label>
+                <textarea id="project-desc" class="console-input" placeholder="Tell us about the manual work that slows your team down, or what you would like to scale..." required></textarea>
+              </div>
+              
+              <button type="submit" class="console-submit" id="submit-btn">
+                <span>REQUEST MY FREE CONSULTATION</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-layout">
+        <a href="#hero" class="nav-logo">
+          <div class="logo-icon">A</div>
+          <div class="logo-text">amabini<span>.solutions</span></div>
+        </a>
+        
+        <div class="footer-copy">
+          &copy; 2026 Amabini Solutions. All rights reserved. <span>// amabini.com</span>
+        </div>
+        
+        <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" title="Scroll to top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </div>
+      </div>
+      
+      <div class="footer-meta">
+        LOCALE: <span>14.5995&deg; N, 120.9842&deg; E</span> // PROTOCOL: <span>SECURE_HTTPS</span> // VERSION: <span>1.0.5</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       AI ASSISTANT TERMINAL CHATBOT WIDGET
+       ========================================== -->
+  <!-- Floating Trigger Button -->
+  <div class="bot-trigger" id="bot-trigger" onclick="toggleChatbot()" title="Open Amabini AI Scoping Assistant">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="bot-icon-open"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line><path d="M12 13a3 3 0 0 0-3 3h6a3 3 0 0 0-3-3z"></path></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="bot-icon-close" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </div>
+
+  <!-- Chatbot Panel Container -->
+  <div class="bot-container glass-panel" id="bot-container">
+    <div class="bot-header">
+      <div class="bot-info">
+        <div class="bot-pulse-status"></div>
+        <div class="bot-header-title">AMABINI_AI_v1.0.9_SYS</div>
+      </div>
+      <div class="bot-close-btn" onclick="toggleChatbot(false)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </div>
+    </div>
+    
+    <!-- Conversation history feed -->
+    <div class="bot-feed" id="bot-feed">
+      <!-- Welcome message generated dynamically in chatbot.js -->
+    </div>
+    
+    <!-- Options tray for rapid scoping responses -->
+    <div class="bot-options" id="bot-options">
+      <!-- Options rendered dynamically -->
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

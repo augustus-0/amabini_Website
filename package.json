@@ -1,0 +1,20 @@
+{
+  "name": "amabini-solutions",
+  "version": "1.0.4",
+  "description": "Amabini Solutions - Human-Centric Digital Transformation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server . -p 3000 -o"
+  },
+  "keywords": [
+    "digital-transformation",
+    "agency",
+    "minimalist",
+    "tokyo-night"
+  ],
+  "author": "Amabini Solutions Operations",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
