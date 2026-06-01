@@ -209,7 +209,8 @@ button, input, textarea, select {
   justify-content: center;
   position: relative;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #000000; /* Solid Black Background */
+  padding: 4px;
   transition: var(--transition-smooth);
 }
 
