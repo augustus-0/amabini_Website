@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "gen-lang-client-0456269203"
-  }
+  },
+  "targets": {
+    "gen-lang-client-0456269203": {
+      "hosting": {
+        "main": [
+          "gen-lang-client-0456269203"
+        ],
+        "sarcastic": [
+          "amabini-funny-0456269203"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

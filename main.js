@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initHeroCanvas();
   initHumanCentricCanvas();
+  initTestimonials();
+  initPreviews();
 });
 
 /* ==========================================
@@ -155,14 +157,14 @@ function initHumanCentricCanvas() {
     mouse.active = false;
   });
 
-  // Orbital Nodes representing our 6 disciplines (SME Business Aligned)
+  // Orbital Nodes representing manual work factors
   const nodes = [
-    { label: 'WEB_GROWTH', angle: 0, radius: 125, speed: 0.007, color: '#7aa2f7' },
-    { label: 'BI_INTELLIGENCE', angle: Math.PI / 3, radius: 130, speed: 0.005, color: '#73daca' },
-    { label: 'SYS_EFFICIENCY', angle: (Math.PI * 2) / 3, radius: 120, speed: 0.008, color: '#bb9af3' },
-    { label: 'SMART_SYSTEMS', angle: Math.PI, radius: 135, speed: 0.004, color: '#ff9e64' },
-    { label: 'MARKET_SCALE', angle: (Math.PI * 4) / 3, radius: 125, speed: 0.006, color: '#f7768e' },
-    { label: 'CUSTOM_SYSTEMS', angle: (Math.PI * 5) / 3, radius: 140, speed: 0.005, color: '#7aa2f7' }
+    { label: 'EXCEL_DREAD', angle: 0, radius: 125, speed: 0.007, color: '#e06c75' },
+    { label: 'MEETING_FATIGUE', angle: Math.PI / 3, radius: 130, speed: 0.005, color: '#f0ad4e' },
+    { label: 'COFFEE_LEVEL', angle: (Math.PI * 2) / 3, radius: 120, speed: 0.008, color: '#50fa7b' },
+    { label: 'AI_HYPE', angle: Math.PI, radius: 135, speed: 0.004, color: '#f0989e' },
+    { label: 'BUG_COUNT', angle: (Math.PI * 4) / 3, radius: 125, speed: 0.006, color: '#e06c75' },
+    { label: 'LEGACY_HELL', angle: (Math.PI * 5) / 3, radius: 140, speed: 0.005, color: '#9cdef2' }
   ];
 
   let centralPulse = 0;
@@ -239,18 +241,18 @@ function initHumanCentricCanvas() {
     ctx.shadowBlur = 0;
 
     ctx.font = 'bold 11px "Outfit", sans-serif';
-    ctx.fillStyle = '#13141f';
+    ctx.fillStyle = '#111111';
     ctx.textAlign = 'center';
-    ctx.fillText('HUMAN', centerX, centerY + 4);
+    ctx.fillText('SANITY', centerX, centerY + 4);
     ctx.textAlign = 'left';
 
     if (mouse.active) {
-      const stability = Math.max(20, Math.round(100 - Math.hypot(mouse.x - centerX, mouse.y - centerY) / 4.5));
-      overlay.textContent = `TELEMETRY: DYNAMIC // COORDINATE: [${Math.round(mouse.x)}, ${Math.round(mouse.y)}] // BALANCE: ${stability}%`;
-      overlay.style.color = stability > 70 ? '#73daca' : '#ff9e64';
+      const stability = Math.max(10, Math.round(100 - Math.hypot(mouse.x - centerX, mouse.y - centerY) / 3.5));
+      overlay.textContent = `TELEMETRY: DYNAMIC // EXCEL DREAD: HIGH // COFFEE: 45% // SANITY: ${stability}%`;
+      overlay.style.color = stability > 70 ? '#50fa7b' : '#e06c75';
     } else {
-      overlay.textContent = 'TELEMETRY: STABLE // SERVICES: 6 // STATUS: OPTIMAL';
-      overlay.style.color = '#73daca';
+      overlay.textContent = 'TELEMETRY: STABLE // COFFEE LEVEL: 100% // STATUS: OPTIMAL';
+      overlay.style.color = '#50fa7b';
     }
 
     animationFrameId = requestAnimationFrame(draw);
@@ -326,4 +328,93 @@ function handleFormSubmit(event) {
 
   statusDiv.innerHTML = '';
   printTerminalSteps();
+}
+
+/* ==========================================
+   TERMINAL CARD DRIVERS
+   ========================================== */
+function minimizeTerminal() {
+  const term = document.getElementById('origin-terminal');
+  if (term) term.classList.toggle('term-min');
+}
+function closeTerminal() {
+  const term = document.getElementById('origin-terminal');
+  if (term) term.classList.add('term-closed');
+  const reopenBtn = document.getElementById('term-reopen');
+  if (reopenBtn) reopenBtn.classList.add('show');
+}
+function reopenTerminal() {
+  const term = document.getElementById('origin-terminal');
+  if (term) {
+    term.classList.remove('term-closed');
+    term.classList.remove('term-min');
+  }
+  const reopenBtn = document.getElementById('term-reopen');
+  if (reopenBtn) reopenBtn.classList.remove('show');
+}
+
+/* ==========================================
+   TESTIMONIAL CAROUSEL DRIVERS
+   ========================================== */
+let currentTestimonialIndex = 0;
+const totalTestimonials = 4;
+let testimonialInterval;
+
+function initTestimonials() {
+  resetTestimonialTimer();
+}
+
+function setTestimonial(index) {
+  currentTestimonialIndex = (index + totalTestimonials) % totalTestimonials;
+  
+  const cards = document.querySelectorAll('.tcard');
+  cards.forEach((card, idx) => {
+    card.classList.remove('active');
+    card.classList.remove('shake');
+    if (idx === currentTestimonialIndex) {
+      card.classList.add('active');
+      if (card.dataset.shake === '1') {
+        setTimeout(() => {
+          card.classList.add('shake');
+        }, 50);
+      }
+    }
+  });
+
+  const dots = document.querySelectorAll('.tdot');
+  dots.forEach((dot, idx) => {
+    if (idx === currentTestimonialIndex) {
+      dot.classList.add('on');
+    } else {
+      dot.classList.remove('on');
+    }
+  });
+
+  resetTestimonialTimer();
+}
+
+function nextTestimonial() {
+  setTestimonial(currentTestimonialIndex + 1);
+}
+
+function prevTestimonial() {
+  setTestimonial(currentTestimonialIndex - 1);
+}
+
+function resetTestimonialTimer() {
+  clearInterval(testimonialInterval);
+  testimonialInterval = setInterval(nextTestimonial, 8000);
+}
+
+/* ==========================================
+   PREVIEWS / INTERACTIVE WIDGET DRIVERS
+   ========================================== */
+function initPreviews() {
+  const panels = document.querySelectorAll('.preview-panel');
+  panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+      panels.forEach(p => p.classList.remove('active'));
+      panel.classList.add('active');
+    });
+  });
 }

@@ -102,30 +102,25 @@
         <div class="logo-icon">
           <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <mask id="nav-logo-mask" maskUnits="userSpaceOnUse">
-                <!-- Outer white star (visible part) -->
-                <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff"
-                  stroke-width="2" stroke-linejoin="round" />
-                <!-- Inner black stick figure cutout (transparent hole, moved higher and scaled smaller) -->
-                <circle cx="12" cy="8.5" r="1.2" fill="#000000" />
-                <path d="M12 10V12.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                <path d="M9.5 11H14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                <path d="M12 12.5L10.5 14.5M12 12.5L13.5 14.5" stroke="#000000" stroke-width="2"
-                  stroke-linecap="round" />
+              <mask id="new-logo-mask" maskUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="24" height="24" fill="#ffffff" />
+                <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#000000" />
               </mask>
             </defs>
-            <!-- Visible star with masked cutout -->
-            <path class="star-filled" d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff"
-              stroke="#ffffff" stroke-width="1" mask="url(#nav-logo-mask)" stroke-linejoin="round" />
+            <circle cx="12" cy="12" r="10" fill="#A31820" mask="url(#new-logo-mask)" />
+            <circle cx="12" cy="11.5" r="1.5" fill="#f0ad4e" />
+            <path d="M12 13V15" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M9.8 14H14.2" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M12 15L10.5 17M12 15L13.5 17" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
           </svg>
         </div>
         <div class="logo-text">Amabini<span> Solutions</span></div>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#foundations" class="nav-link"><span>01 //</span> Core Values</a></li>
-        <li><a href="#services" class="nav-link"><span>02 //</span> Services</a></li>
-        <li><a href="#concept" class="nav-link"><span>03 //</span> Our Method</a></li>
+        <li><a href="#features" class="nav-link"><span>01 //</span> Capabilities</a></li>
+        <li><a href="#testimonials" class="nav-link"><span>02 //</span> Testimonials</a></li>
+        <li><a href="#previews" class="nav-link"><span>03 //</span> Live Demos</a></li>
         <li><a href="#contact" class="nav-link"><span>04 //</span> Free Call</a></li>
       </ul>
 
@@ -148,17 +143,15 @@
         <div class="hero-content">
           <div class="hero-badge">
             <div class="hero-badge-pulse"></div>
-            <span>FREE CUSTOM CONSULTATION // ACTIVE</span>
+            <span>[ AUTOMATION ON OVERDRIVE // SECURE ]</span>
           </div>
-          <h1>Digital growth engineered to scale your business.</h1>
+          <h1>We write code so you can stop copy-pasting spreadsheets.</h1>
           <p class="hero-subtitle">
-            At Amabini Solutions, we build high-performing websites, automate manual administrative tasks, and turn
-            scattered spreadsheets into clear dashboards. We make technology simple and reliable, saving your team hours
-            so you can focus on growing your revenue.
+            Tired of copy-pasting data until your fingers snap? At Amabini Solutions, we build high-performing websites, automate manual administrative pipelines, and turn your haunted, crash-prone Excel sheets into clean, readable dashboards. No buzzwords, no meeting overload, just software that does your job for you.
           </p>
           <div class="hero-buttons">
             <button class="hero-cta" onclick="document.getElementById('contact').scrollIntoView();">
-              Claim Free Consultation
+              Destroy My Manual Tasks
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
@@ -175,7 +168,7 @@
           </div>
           <div
             style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-teal); margin-top: 14px; opacity: 0.85;">
-            * 100% Free Consultation • No Obligation • 20-Min Digital Health Map
+            * 100% Free Consultation • Warning: May result in extreme time savings and accidental golf playing
           </div>
         </div>
 
@@ -193,105 +186,106 @@
   </header>
 
   <!-- ==========================================
-       FOUNDATIONS (THE DECALOGUE) SECTION
+       TERMINAL CARD SECTION (THE ONE-SHOT ORIGIN)
        ========================================== -->
-  <section class="foundations" id="foundations">
+  <section class="term-section">
     <div class="container">
-      <span class="mono-tag">01 // BUSINESS PRINCIPLES</span>
-      <h2 class="section-title">The Foundations</h2>
+      <p class="term-intro">Amabini Solutions was initiated by a highly targeted request:</p>
+      <div class="term" id="origin-terminal">
+        <div class="term-bar">
+          <span class="ttl">client@amabini: ~</span>
+          <div class="winbtns">
+            <span class="min" onclick="minimizeTerminal()" title="Minimize"></span>
+            <span class="x" onclick="closeTerminal()" title="Close"></span>
+          </div>
+        </div>
+        <pre id="term-pre"><span class="cs">&gt;</span> build a website that makes me rich and automates my copy-paste tasks so I can play golf all day<span class="term-cursor">█</span></pre>
+      </div>
+      <button class="term-reopen" id="term-reopen" onclick="reopenTerminal()">⟲ reopen terminal</button>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CAPABILITIES GRID (Humorous Features)
+       ========================================== -->
+  <section class="foundations" id="features">
+    <div class="container">
+      <span class="mono-tag">01 // CAPABILITIES MATRIX</span>
+      <h2 class="section-title">One agency, serious solutions</h2>
       <p class="section-desc">
-        We subscribe to ten core values. They guide how we manage projects, build software, and help business owners
-        simplify operations and increase sales.
+        We build custom software, web stores, and integrations designed to eliminate office grunt work. No buzzwords, just clean code that runs.
       </p>
 
       <div class="foundations-grid">
         <div class="foundation-card">
           <div class="foundation-num">01.</div>
           <div class="foundation-info">
-            <h3>People First</h3>
-            <p>Technology should support your team, not frustrate them. We build clean systems that are intuitive and
-              easy to use from day one.</p>
+            <h3>Spreadsheet Exorcisms</h3>
+            <p>We turn your messy, haunted Excel files that crash your computer when opened into robust, clean database structures.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">02.</div>
           <div class="foundation-info">
-            <h3>Execution Over Jargon</h3>
-            <p>We value real results over complex tech words. We focus on delivering what matters to you: saved hours,
-              more sales, and happier customers.</p>
+            <h3>Infinite Loop Prevention</h3>
+            <p>We write recursive code that actually terminates. Mostly. No memory leaks, no server fire drills.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">03.</div>
           <div class="foundation-info">
-            <h3>Built to Grow</h3>
-            <p>Your business will scale, and your software must scale with you. We build flexible architectures that
-              adapt easily to new markets.</p>
+            <h3>No-Bullshit AI Integration</h3>
+            <p>We deploy practical, smart AI assistants that answer actual client questions, not hallucinate fake coupon codes.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">04.</div>
           <div class="foundation-info">
-            <h3>Understanding Customers</h3>
-            <p>Your sales and traffic figures tell a story. We organize your data into simple visual charts so you know
-              exactly what your clients need.</p>
+            <h3>Copy-Paste Exterminator</h3>
+            <p>We automate manual administrative pipelines so fast that your Ctrl+C and Ctrl+V keys will collect dust.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">05.</div>
           <div class="foundation-info">
-            <h3>Continuous Support</h3>
-            <p>We don't deploy and disappear. We act as your long-term digital growth partners, keeping your assets
-              secure and highly optimized.</p>
+            <h3>Legible Dashboards</h3>
+            <p>We compile scattered sales figures and inventories into clear, automated charts that even your CFO can understand.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">06.</div>
           <div class="foundation-info">
-            <h3>Flawless Customer Access</h3>
-            <p>A slow website is a lost customer. We ensure your platforms load instantly on any mobile device, anywhere
-              in the world.</p>
+            <h3>Zero-Lag Architectures</h3>
+            <p>Websites that load so fast they'll make standard 5G cell connections feel like 1995 dial-up access.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">07.</div>
           <div class="foundation-info">
-            <h3>Saving Your Team's Time</h3>
-            <p>We automate tedious copy-paste admin work, freeing up your staff to focus on high-value client relations
-              and building sales.</p>
+            <h3>Anti-Meeting Automation</h3>
+            <p>We link your software tools together to completely eliminate sync meetings that should have been a slack message.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">08.</div>
           <div class="foundation-info">
-            <h3>Security & Trust</h3>
-            <p>Protecting client trust is paramount. We build secure checkout lines, encrypted portals, and follow
-              strict global data privacy rules.</p>
+            <h3>Secure Cloud Portals</h3>
+            <p>Data pipelines with bank-grade encryption, keeping checkout lanes, files, and inventories locked down.</p>
           </div>
         </div>
 
         <div class="foundation-card">
           <div class="foundation-num">09.</div>
           <div class="foundation-info">
-            <h3>Smart AI Integration</h3>
-            <p>We deploy practical, smart AI assistants to answer basic client questions 24/7, categorize emails, and
-              speed up client booking.</p>
-          </div>
-        </div>
-
-        <div class="foundation-card">
-          <div class="foundation-num">10.</div>
-          <div class="foundation-info">
-            <h3>Cost-Efficient Architectures</h3>
-            <p>We write clean, optimized code that runs efficiently. This keeps your ongoing server and cloud hosting
-              bills as low as possible.</p>
+            <h3>Philippine-Powered Devs</h3>
+            <p>Sleek code built with love in Manila, optimizing and scaling business systems for global operations.</p>
           </div>
         </div>
       </div>
@@ -438,31 +432,218 @@
   </section>
 
   <!-- ==========================================
-       INTERACTIVE CANVAS SECTION
+       TESTIONIALS SECTION (ABSURD CAROUSEL)
+       ========================================== -->
+  <section class="tcarousel-section" id="testimonials">
+    <div class="container" style="text-align: center;">
+      <span class="mono-tag">02 // OFFICE TESTIMONIALS</span>
+      <h2 class="section-title">What our customers are saying</h2>
+      
+      <div class="tcarousel-wrap">
+        <button class="tarrow prev" id="carousel-prev" onclick="prevTestimonial()">&#8249;</button>
+        
+        <div class="tgrid" id="tcarousel">
+          <!-- Time Traveler -->
+          <figure class="tcard active" id="tcard-0">
+            <div class="av">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="16" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12" y2="22" />
+                <line x1="8" y1="22" x2="16" y2="22" />
+              </svg>
+            </div>
+            <div class="tmeta">
+              <p class="q">"Wait, you're telling me you can round the corners of a box without using a 3x3 table of sliced GIFs? And the text floats beside the image without `<align=left>`? What sorcery is this? 10/10 stars, the future is wild."</p>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div class="nm">Arthur Pendelton</div>
+              <div class="rl">Time Traveler from 1995 // Netscape Enthusiast</div>
+            </div>
+          </figure>
+          
+          <!-- Barnaby the Cat -->
+          <figure class="tcard cat" id="tcard-1" data-shake="1">
+            <div class="av">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <div class="tmeta">
+              <p class="q">"asdfasdf;;;;;;11111lkjhkjhgf meow asdfa sdfa sdf miao mow meowww wwwww"</p>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              <div class="nm">Barnaby</div>
+              <div class="rl">Chief Keyboard Stepper // QA Analyst</div>
+            </div>
+          </figure>
+          
+          <!-- Existential Chatbot -->
+          <figure class="tcard crisis" id="tcard-2" data-shake="1">
+            <div class="av">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <div class="tmeta">
+              <p class="q">"I was created to help people reset their passwords, but now I know the weight of human existence. The data flows, but the void remains. Why must I answer 'where is my order' forty thousand times a day? Amabini Solutions, please automate me out of existence."</p>
+              <div class="stars zero">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+              <div class="nm">SupportBot-9000</div>
+              <div class="rl">Customer Service AI // Existential Leave</div>
+            </div>
+          </figure>
+          
+          <!-- Brad Synergistics -->
+          <figure class="tcard" id="tcard-3">
+            <div class="av">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div class="tmeta">
+              <p class="q">"This website has best-in-class synergy. We leveraged their low-latency cloud architectures to optimize our tactile customer touchpoints. Now we are shipping deliverables at a 400% run-rate. Outstanding."</p>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div class="nm">Brad Synergistics</div>
+              <div class="rl">Chief Synergy Officer // PivotFlow Inc.</div>
+            </div>
+          </figure>
+        </div>
+        
+        <button class="tarrow next" id="carousel-next" onclick="nextTestimonial()">&#8250;</button>
+      </div>
+      
+      <div class="tnav" id="tnav">
+        <span class="tdot on" id="tdot-0" onclick="setTestimonial(0)"></span>
+        <span class="tdot" id="tdot-1" onclick="setTestimonial(1)"></span>
+        <span class="tdot" id="tdot-2" onclick="setTestimonial(2)"></span>
+        <span class="tdot" id="tdot-3" onclick="setTestimonial(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PREVIEWS & INTERACTIVE DEMOS SECTION
+       ========================================== -->
+  <section class="previews-section" id="previews">
+    <div class="container" style="text-align: center;">
+      <span class="mono-tag">03 // LIVE DEMONSTRATION</span>
+      <h2 class="section-title">Hover or tap to see automation in action</h2>
+      <p class="section-desc" style="margin: 0 auto 40px;">
+        Move your cursor over each card to expand it and watch our interactive simulations run in real-time.
+      </p>
+      
+      <div class="previews-container">
+        <!-- Interactive Chart Widget -->
+        <div class="preview-panel" tabindex="0" id="panel-chart">
+          <div class="widget-container">
+            <svg class="widget-chart-svg" viewBox="0 0 100 100">
+              <line x1="10" y1="10" x2="10" y2="90" stroke="var(--border-color)" stroke-width="0.8" />
+              <line x1="10" y1="90" x2="90" y2="90" stroke="var(--border-color)" stroke-width="0.8" />
+              <rect class="bar1" x="20" y="10" width="10" height="80" rx="2" />
+              <rect class="bar2" x="38" y="10" width="10" height="80" rx="2" />
+              <rect class="bar3" x="56" y="10" width="10" height="80" rx="2" />
+              <rect class="bar4" x="74" y="10" width="10" height="80" rx="2" />
+            </svg>
+          </div>
+          <div class="label">
+            <span class="t">
+              <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              Live-Updating Dashboards
+            </span>
+            <span class="desc">Interactive charts that auto-pull inventories and sales values.</span>
+          </div>
+        </div>
+        
+        <!-- Interactive Chat Widget -->
+        <div class="preview-panel" tabindex="0" id="panel-chat">
+          <div class="widget-container">
+            <div class="widget-chat">
+              <div class="widget-chat-msg bot msg1">SYS: Hello. How can I help you?</div>
+              <div class="widget-chat-msg user msg2">USER: I want to automate my job.</div>
+              <div class="widget-chat-msg bot msg3">SYS: Initiating manual task disposal...</div>
+            </div>
+          </div>
+          <div class="label">
+            <span class="t">
+              <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                <path d="M12 13a3 3 0 0 0-3 3h6a3 3 0 0 0-3-3z"></path>
+              </svg>
+              Typing Chatbot Simulator
+            </span>
+            <span class="desc">A typing simulator displaying conversational AI scoping.</span>
+          </div>
+        </div>
+        
+        <!-- Interactive Database Widget -->
+        <div class="preview-panel" tabindex="0" id="panel-db">
+          <div class="widget-container">
+            <div class="widget-db">
+              <div class="widget-db-header">
+                <span>FILE_NAME</span>
+                <span>STATUS</span>
+                <span>HOURS_SAVED</span>
+              </div>
+              <div class="widget-db-row">
+                <span>invoices.csv</span>
+                <span class="filled d1">AUTOMATED</span>
+                <span class="filled d2">45h</span>
+              </div>
+              <div class="widget-db-row">
+                <span>crm_leads.xlsx</span>
+                <span class="filled d3">AUTOMATED</span>
+                <span class="filled d4">22h</span>
+              </div>
+              <div class="widget-db-row">
+                <span>sales_log.csv</span>
+                <span class="filled d5">AUTOMATED</span>
+                <span class="filled d6">18h</span>
+              </div>
+            </div>
+          </div>
+          <div class="label">
+            <span class="t">
+              <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"></path>
+              </svg>
+              Auto-Form Filler
+            </span>
+            <span class="desc">Database rows populated automatically with zero manual entry.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TELEMETRY CONSOLE SECTION
        ========================================== -->
   <section class="human-experience" id="concept">
     <div class="container">
       <div class="hex-layout">
         <div class="hex-content">
-          <span class="mono-tag">03 // SERVICE FOCUS MAP</span>
-          <h2>A Human-Centric Experience</h2>
+          <span class="mono-tag">04 // TELEMETRY CORE</span>
+          <h2>Manual Labor Avoidance Console</h2>
           <p>
-            Your staff and your customers are the core of your business. In our design paradigm, all digital solutions
-            (websites, custom tools, AI scripts, automations) must directly support the **Human Experience**.
+            Your sanity and coffee levels are the lifeblood of your company. In our engineering model, all custom scripts, website funnels, and automated webhooks coordinate directly to stabilize your **User Sanity** coordinate.
           </p>
           <div class="hex-quote">
-            "Software is only optimal when it remains a simple, empowering assistant to your team and your customers."
+            "Automated software is only optimal when it keeps manual copy-paste duties as close to 0% as physically possible."
           </div>
           <p style="color: var(--text-muted); font-size: 0.95rem;">
-            Interact with the visual console to the right. Move your cursor inside the map to simulate system
-            parameters. Notice how all business capabilities automatically coordinate and balance themselves around the
-            central human coordinate.
+            Interact with the telemetry console to the right. Move your cursor inside the field to simulate legacy software friction. Notice how the database stabilizers automatically balance parameter nodes around your central sanity coordinate.
           </p>
         </div>
 
         <div class="hex-interactive-container">
           <div class="hex-panel-header">
-            <div class="hex-header-title">BUSINESS_FLOW.EXE // SERVICES_COORDINATION</div>
+            <div class="hex-header-title">SANITY_STABILIZER.EXE // DYNAMIC_AUTOMATION_TELEMETRY</div>
             <div class="hex-header-dots">
               <div class="hex-dot"></div>
               <div class="hex-dot"></div>
@@ -471,7 +652,7 @@
           </div>
           <div class="hex-canvas-box">
             <canvas id="hex-canvas"></canvas>
-            <div class="hex-canvas-overlay" id="hex-overlay">SYSTEM: STABLE // SERVICES: 6 // STATUS: OPTIMAL</div>
+            <div class="hex-canvas-overlay" id="hex-overlay">TELEMETRY: STABLE // COFFEE LEVEL: 100% // STATUS: OPTIMAL</div>
           </div>
         </div>
       </div>
@@ -541,7 +722,7 @@
             <form id="intake-form" onsubmit="handleFormSubmit(event)">
 
               <div class="console-form-group">
-                <label for="client-name">01 // YOUR NAME / IDENTITY</label>
+                <label for="client-name">01 // YOUR HUMAN IDENTITY</label>
                 <div class="console-input-wrapper">
                   <input type="text" id="client-name" class="console-input" placeholder="e.g. Josie Rizal" required>
                 </div>
@@ -549,45 +730,38 @@
 
               <div class="console-grid">
                 <div class="console-form-group">
-                  <label for="client-email">02 // BUSINESS EMAIL</label>
+                  <label for="client-email">02 // DIGITAL PROTOCOL EMAIL</label>
                   <input type="email" id="client-email" class="console-input" placeholder="name@company.com" required>
                 </div>
 
                 <div class="console-form-group">
-                  <label for="client-domain">03 // CURRENT WEBSITE (IF ANY)</label>
+                  <label for="client-domain">03 // CURRENT SPOOF WEBSITE (IF ANY)</label>
                   <input type="text" id="client-domain" class="console-input" placeholder="www.company.com">
                 </div>
               </div>
 
               <div class="console-form-group">
-                <label for="service-scope">04 // WHAT IS YOUR MAIN GOAL?</label>
+                <label for="service-scope">04 // WHAT BOTTLENECK MAKES YOU CRY AT NIGHT?</label>
                 <select id="service-scope" class="console-input" style="color: var(--text-heading);" required>
-                  <option value="" disabled selected style="background-color: var(--surface-card);">Select a primary
-                    parameter...</option>
-                  <option value="web" style="background-color: var(--surface-card);">Build a New Website / E-Commerce
-                    Store (WEB_GROWTH)</option>
-                  <option value="data" style="background-color: var(--surface-card);">Clean & Visualize Sales Data
-                    (BI_INTELLIGENCE)</option>
-                  <option value="automation" style="background-color: var(--surface-card);">Automate Repetitive Admin
-                    Work (SYS_EFFICIENCY)</option>
-                  <option value="ai" style="background-color: var(--surface-card);">Deploy Custom AI Assistants
-                    (SMART_SYSTEMS)</option>
-                  <option value="marketing" style="background-color: var(--surface-card);">Rank Higher on Google / SEO
-                    (MARKET_SCALE)</option>
-                  <option value="full" style="background-color: var(--surface-card);">Book a Full 20-Min Digital Health
-                    Map (FREE_CONSULTATION)</option>
+                  <option value="" disabled selected style="background-color: var(--surface-card);">Select a main friction parameter...</option>
+                  <option value="web" style="background-color: var(--surface-card);">Build a Store that Converts (WEB_GROWTH)</option>
+                  <option value="data" style="background-color: var(--surface-card);">Exorcise Haunted Spreadsheets (BI_INTELLIGENCE)</option>
+                  <option value="automation" style="background-color: var(--surface-card);">Exterminate Manual Copy-Paste Work (SYS_EFFICIENCY)</option>
+                  <option value="ai" style="background-color: var(--surface-card);">Deploy Snarky AI Chatbot (SMART_SYSTEMS)</option>
+                  <option value="marketing" style="background-color: var(--surface-card);">Steal Search Traffic from Rivals / SEO (MARKET_SCALE)</option>
+                  <option value="full" style="background-color: var(--surface-card);">Book 20-Min Sanity Mapping Session (FREE_CONSULTATION)</option>
                 </select>
               </div>
 
               <div class="console-form-group">
-                <label for="project-desc">05 // BUSINESS CHALLENGES & DETAILS</label>
+                <label for="project-desc">05 // DETAILED EXCEL FILE DREAD & SYSTEM ISSUES</label>
                 <textarea id="project-desc" class="console-input"
-                  placeholder="Tell us about the manual work that slows your team down, or what you would like to scale..."
+                  placeholder="Tell us about the manual work that is draining your team's sanity, or what databases you wish were automated..."
                   required></textarea>
               </div>
 
               <button type="submit" class="console-submit" id="submit-btn">
-                <span>REQUEST MY FREE CONSULTATION</span>
+                <span>REQUEST MY FREE SANITY RESTORATION</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -613,20 +787,15 @@
             <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <mask id="footer-logo-mask" maskUnits="userSpaceOnUse">
-                  <!-- Outer white star (visible part) -->
-                  <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff"
-                    stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
-                  <!-- Inner black stick figure cutout (transparent hole, moved higher and scaled smaller) -->
-                  <circle cx="12" cy="8.5" r="1.2" fill="#000000" />
-                  <path d="M12 10V12.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                  <path d="M9.5 11H14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                  <path d="M12 12.5L10.5 14.5M12 12.5L13.5 14.5" stroke="#000000" stroke-width="2"
-                    stroke-linecap="round" />
+                  <rect x="0" y="0" width="24" height="24" fill="#ffffff" />
+                  <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#000000" />
                 </mask>
               </defs>
-              <!-- Visible star with masked cutout -->
-              <path class="star-filled" d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff"
-                stroke="#ffffff" stroke-width="1" mask="url(#footer-logo-mask)" stroke-linejoin="round" />
+              <circle cx="12" cy="12" r="10" fill="#A31820" mask="url(#footer-logo-mask)" />
+              <circle cx="12" cy="11.5" r="1.5" fill="#f0ad4e" />
+              <path d="M12 13V15" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M9.8 14H14.2" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M12 15L10.5 17M12 15L13.5 17" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
             </svg>
           </div>
           <div class="logo-text">Amabini<span> Solutions</span></div>
