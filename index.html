@@ -20,33 +20,7 @@
 
   <link rel="stylesheet" href="index.css?v=2">
 
-  <style>
-    /* Bypass browser CSS cache to guarantee negative-space brand logo styles are applied immediately */
-    .logo-icon {
-      background-color: #000000 !important;
-      padding: 4px !important;
-    }
-    .logo-svg .star-filled {
-      stroke: #ffffff !important;
-      fill: #ffffff !important;
-      stroke-width: 1px !important;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    }
 
-    .nav-logo:hover .logo-icon,
-    .logo-icon:hover {
-      background-color: #A31820 !important;
-      box-shadow: 0 0 15px rgba(163, 24, 32, 0.8) !important;
-      transform: scale(1.1) rotate(5deg) !important;
-    }
-
-    .nav-logo:hover .logo-svg .star-filled,
-    .logo-icon:hover .logo-svg .star-filled {
-      stroke: #ffd700 !important;
-      fill: #ffd700 !important;
-      filter: drop-shadow(0 0 4px #ffd700) !important;
-    }
-  </style>
 
   <!-- SEO & Social OpenGraph Meta Tags -->
   <meta property="og:title" content="Amabini Solutions // Digital Scaling & Automation for SMEs">
@@ -103,15 +77,20 @@
           <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <mask id="new-logo-mask" maskUnits="userSpaceOnUse">
-                <rect x="0" y="0" width="24" height="24" fill="#ffffff" />
-                <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#000000" />
+                <!-- White star boundary -->
+                <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff"
+                  stroke-width="2" stroke-linejoin="round" />
+                <!-- Black human cutout -->
+                <circle cx="12" cy="8.5" r="1.2" fill="#000000" />
+                <path d="M12 10V12.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                <path d="M9.5 11H14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                <path d="M12 12.5L10.5 14.5M12 12.5L13.5 14.5" stroke="#000000" stroke-width="2"
+                  stroke-linecap="round" />
               </mask>
             </defs>
-            <circle cx="12" cy="12" r="10" fill="#A31820" mask="url(#new-logo-mask)" />
-            <circle cx="12" cy="11.5" r="1.5" fill="#f0ad4e" />
-            <path d="M12 13V15" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
-            <path d="M9.8 14H14.2" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
-            <path d="M12 15L10.5 17M12 15L13.5 17" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
+            <!-- Visible red star with cutout human shape -->
+            <path class="star-filled" d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#e06c75"
+              stroke="#e06c75" stroke-width="1" mask="url(#new-logo-mask)" stroke-linejoin="round" />
           </svg>
         </div>
         <div class="logo-text">Amabini<span> Solutions</span></div>
@@ -286,6 +265,14 @@
           <div class="foundation-info">
             <h3>Philippine-Powered Devs</h3>
             <p>Sleek code built with love in Manila, optimizing and scaling business systems for global operations.</p>
+          </div>
+        </div>
+
+        <div class="foundation-card">
+          <div class="foundation-num">10.</div>
+          <div class="foundation-info">
+            <h3>Boss-Pleasing PDF Generators</h3>
+            <p>We build automated reporting scripts that output PDF summaries so polished your managers will assume you worked all weekend.</p>
           </div>
         </div>
       </div>
@@ -787,15 +774,20 @@
             <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <mask id="footer-logo-mask" maskUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="24" height="24" fill="#ffffff" />
-                  <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#000000" />
+                  <!-- White star boundary -->
+                  <path d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#ffffff" stroke="#ffffff"
+                    stroke-width="2" stroke-linejoin="round" />
+                  <!-- Black human cutout -->
+                  <circle cx="12" cy="8.5" r="1.2" fill="#000000" />
+                  <path d="M12 10V12.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                  <path d="M9.5 11H14.5" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                  <path d="M12 12.5L10.5 14.5M12 12.5L13.5 14.5" stroke="#000000" stroke-width="2"
+                    stroke-linecap="round" />
                 </mask>
               </defs>
-              <circle cx="12" cy="12" r="10" fill="#A31820" mask="url(#footer-logo-mask)" />
-              <circle cx="12" cy="11.5" r="1.5" fill="#f0ad4e" />
-              <path d="M12 13V15" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
-              <path d="M9.8 14H14.2" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
-              <path d="M12 15L10.5 17M12 15L13.5 17" stroke="#f0ad4e" stroke-width="1.8" stroke-linecap="round" />
+              <!-- Visible red star with cutout human shape -->
+              <path class="star-filled" d="M12 2L15 9H22L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9H9L12 2Z" fill="#e06c75"
+                stroke="#e06c75" stroke-width="1" mask="url(#footer-logo-mask)" stroke-linejoin="round" />
             </svg>
           </div>
           <div class="logo-text">Amabini<span> Solutions</span></div>
